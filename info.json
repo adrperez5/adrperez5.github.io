@@ -1,0 +1,10 @@
+{
+  "project": "Instagram Clone",
+  "role": "Full-Stack Developer",
+  "date": "Winter 2024",
+  "description": [
+    "Architected two-phase deployment: server-rendered (Flask/Jinja) to client-side SPA with RESTful API backend and session-based authentication",
+    "Designed normalized SQL schema with efficient indexing for social graph queries, supporting posts, stories, likes, and bidirectional follow relationships",
+    "Implemented infinite scroll with debounced pagination, optimistic updates for user interactions, and AJAX-powered real-time UI without page refreshes"
+  ]
+}

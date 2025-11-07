@@ -1,4 +1,4 @@
-<!-- =========== Personal Website for profile overview =========== -->
+<!-- =========== Website for Personal Profile =========== -->
 <!DOCTYPE html>
 <html>
 
@@ -14,25 +14,73 @@
 
 <body>
 
-  <!-- Side Panel -->
+  <!-- Navigation Panel -->
   <div class="side-panel">
-    <img id="menu" src="/data/menu_icon.png" alt="menu">
-    <p>Resume</p>
-    <p>Projects</p>
-    <p>Work</p>
+    <img id="menu" src="./data/menu_icon.png" alt="menu">
+    <hr>
+    <a class="website" href="#resume">Resume</a>
+    <a class="website" href="#projects">Projects</a>
+    <a class="website" href="#work">Work</a>
     <a href="https://www.linkedin.com/in/adrian-perez-72ab1a16a/">LinkedIn</a>
     <a href="https://github.com/adrperez5">Github</a>
   </div>
 
-    <!-- Page container -->
+  <!-- Page container -->
   <div class="page-container">
-    <div class="personal-info">
-      <h1>Adrian Perez</h1>
-      <p>Ann Arbor, Michigan</p>
-      <p>adrianp5803@gmail.com</p>
+    <!-- header -->
+    <div class="header">
+      <div class="bio">
+        <h1>Adrian Perez</h1>
+        <p>Ann Arbor, Michigan</p>
+        <p>adrianp5803@gmail.com</p>
+        <p>
+          I am a software Engineer experienced in back-end development, full-stack web applications, and system
+          administration. I have hands-on experience with Next.js, MongoDB, and some AI development. My work 
+          usually involves 
+        </p>
+      </div>
+      <img id="profile-pic" src="/data/profile_pic.png" alt="Profile Picture">
     </div>
-  </div>
-  <div class='outer-container'>
+    
+    <!-- content -->
+    <div class="page-content">
+
+      <!-- Education Section -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education" id="educationContainer">
+  
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid" id="projectsContainer">
+          
+        </div>
+      </section>
+
+      <!-- Experience/Work Section -->
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="expereince-grid" id="experienceContainer">
+  
+        </div>
+      </section>
+
+      <!-- Modal for detailed view -->
+      <div id="detailModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <div id="modalContent">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> 
       
 </body>
 
