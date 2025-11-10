@@ -1,0 +1,98 @@
+{
+  "bio": {
+    "name": "Adrian Perez",
+    "title": "Software Engineer",
+    "location": "Ann Arbor, Michigan",
+    "email": "adrianp5803@gmail.com",
+    "phone": "(313) 932-6413",
+    "description": "Software Engineer with expertise in full-stack development, iOS engineering, and distributed systems. Experienced in building scalable backends, real-time multiplayer infrastructure, and native mobile applications. Passionate about performance optimization, clean architecture, and solving complex technical challenges.",
+    "profileImage": "/assets/images/profile.jpg",
+    "socialLinks": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/adrperez5",
+        "icon": "github"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/adrian-perez-72ab1a16a/",
+        "icon": "linkedin"
+      }
+    ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Languages",
+        "items": ["TypeScript", "Python", "Swift", "C++", "Java", "C", "SQL", "HTML/CSS"]
+      },
+      {
+        "name": "Frontend",
+        "items": ["React", "Next.js", "SwiftUI", "jQuery", "AJAX", "Bootstrap"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "Express", "Flask", "Django", "Spring Boot", "RESTful APIs"]
+      },
+      {
+        "name": "Databases & Infrastructure",
+        "items": ["PostgreSQL", "MongoDB", "MySQL", "SwiftData", "Redis"]
+      },
+      {
+        "name": "Tools & Technologies",
+        "items": ["Git", "Socket.io", "Kafka", "MapReduce", "AWS", "Xcode Instruments", "Docker"]
+      }
+    ]
+  },
+  "proficiencies": [
+    {
+      "name": "Full-Stack Development",
+      "level": 95,
+      "icon": "code"
+    },
+    {
+      "name": "Backend Architecture",
+      "level": 90,
+      "icon": "server"
+    },
+    {
+      "name": "iOS Development",
+      "level": 90,
+      "icon": "mobile"
+    },
+    {
+      "name": "Database Design",
+      "level": 85,
+      "icon": "database"
+    },
+    {
+      "name": "Distributed Systems",
+      "level": 85,
+      "icon": "network"
+    },
+    {
+      "name": "Performance Optimization",
+      "level": 88,
+      "icon": "speedometer"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Bachelor of Science in Computer Science",
+      "issuer": "University of Michigan",
+      "date": "August 2024",
+      "credentialUrl": "",
+      "image": "/assets/images/cert-umich.jpg"
+    }
+  ],
+  "interests": [
+    "iOS Development",
+    "Backend Systems Architecture",
+    "Real-time Multiplayer Systems",
+    "Performance Optimization",
+    "Distributed Systems",
+    "Open Source Contribution",
+    "Accessibility Engineering",
+    "Web Technologies"
+  ]
+}

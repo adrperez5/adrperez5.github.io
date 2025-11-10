@@ -1,0 +1,145 @@
+[
+  {
+    "id": "sudoku-ios-app",
+    "title": "Sudoku iOS App",
+    "summary": "Production iOS application with advanced state management, C++ integration, and real-time anti-cheat mechanisms. Achieved 40% performance improvement through migration to iOS 17 Observable macro.",
+    "thumbnail": "/assets/images/projects/sudoku-ios-thumb.jpg",
+    "featured": true,
+    "details": {
+      "description": "A production-grade multiplayer Sudoku iOS application featuring advanced state management, performant puzzle generation via C++ interoperability, and real-time anti-cheat validation. Migrated from legacy StateObject/ObservableObject to iOS 17 Observable macro, achieving 40% performance boost. Implements SwiftData-backed persistence with robust layered architecture and secure delta-based sync protocol for lightweight gameplay data transmission.",
+      "techStack": ["Swift", "SwiftUI", "SwiftData", "C++", "WebSockets", "iOS 17 Observable"],
+      "architecture": "Modular layered architecture with SwiftData persistence layer, C++ puzzle generation engine via Swift interoperability, WebSocket-based real-time communication with backend server for anti-cheat validation, and delta-based sync protocol for efficient data transmission.",
+      "images": [
+        "/assets/images/projects/sudoku-ios-1.jpg",
+        "/assets/images/projects/sudoku-ios-2.jpg"
+      ],
+      "codeExamples": [
+        {
+          "title": "Observable State Management",
+          "language": "swift",
+          "code": "@Observable\nclass GameState {\n    var board: [[Int]]\n    var isValid: Bool\n    \n    // Reactive, lightweight state management\n    // 40% performance improvement over StateObject\n}"
+        }
+      ],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  },
+  {
+    "id": "sudoku-multiplayer-server",
+    "title": "Sudoku Multiplayer Server",
+    "summary": "Scalable microservice backend with Node.js, TypeScript, Socket.io for real-time gameplay, JWT authentication, PostgreSQL database, and server-side anti-cheat validation.",
+    "thumbnail": "/assets/images/projects/sudoku-server-thumb.jpg",
+    "featured": true,
+    "details": {
+      "description": "Designed and implemented scalable microservice backend architecture supporting real-time multiplayer Sudoku gameplay. Built with Node.js, Express, and TypeScript for maintainability and horizontal scalability. Features comprehensive authentication with JWT tokens, bcrypt password hashing, role-based access control, and optimized PostgreSQL schema for user management and game statistics.",
+      "techStack": ["Node.js", "Express", "TypeScript", "Socket.io", "PostgreSQL", "JWT", "bcrypt"],
+      "architecture": "Microservice architecture with RESTful API endpoints for user management, Socket.io WebSocket server for real-time multiplayer infrastructure, PostgreSQL database with optimized queries, server-side anti-cheat validation system, and production-ready configurations including rate limiting, CORS policies, and security headers.",
+      "images": [],
+      "codeExamples": [
+        {
+          "title": "Real-time Move Validation",
+          "language": "typescript",
+          "code": "socket.on('move', async (data) => {\n  const isValid = await validateMove(data);\n  if (!isValid) {\n    socket.emit('cheat_detected');\n    return;\n  }\n  io.to(gameRoom).emit('move_update', data);\n});"
+        }
+      ],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  },
+  {
+    "id": "startup-website",
+    "title": "Startup Website",
+    "summary": "Full-stack web service application with React frontend, Django backend, MongoDB database, and third-party API integrations. Achieved 20% faster load time through performance optimization.",
+    "thumbnail": "/assets/images/projects/startup-thumb.jpg",
+    "featured": true,
+    "details": {
+      "description": "Designed and implemented a full-stack web service application for a startup, handling both front-end (React) and back-end development (Django) while using MongoDB for database. Led the system architecture and technical design, ensuring a scalable, efficient, and user-friendly solution. Performed comprehensive quality assurance including unit, integration, and user acceptance testing, resulting in 20% faster load/response time.",
+      "techStack": ["React", "Django", "MongoDB", "RESTful APIs", "JavaScript", "Python"],
+      "architecture": "Full-stack architecture with React SPA frontend, Django backend with RESTful API design, MongoDB for flexible document storage, third-party service integrations, and comprehensive testing suite for quality assurance.",
+      "images": [],
+      "codeExamples": [],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  },
+  {
+    "id": "search-engine",
+    "title": "Search Engine",
+    "summary": "Scalable Google-like search engine with service-oriented architecture, distributed MapReduce pipeline, inverted indexing, tf-idf and PageRank algorithms deployed on AWS.",
+    "thumbnail": "/assets/images/projects/search-thumb.jpg",
+    "featured": false,
+    "details": {
+      "description": "Built a scalable, Google-like search engine using service-oriented architecture, distributed MapReduce pipeline, and inverted indexing. Designed and implemented manager-worker MapReduce framework to process crawled web pages at scale. Applied information retrieval algorithms including tf-idf and PageRank to rank results based on content relevance and link structure. Deployed full search engine stack on AWS.",
+      "techStack": ["Python", "MapReduce", "Flask", "AWS", "RESTful APIs"],
+      "architecture": "Service-oriented architecture with distributed MapReduce framework for indexing, inverted index data structure, tf-idf and PageRank ranking algorithms, RESTful Index server exposing JSON results, and modular microservice-like components for indexing, ranking, and querying.",
+      "images": [],
+      "codeExamples": [],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  },
+  {
+    "id": "instagram-clone",
+    "title": "Instagram Clone",
+    "summary": "Full-featured Instagram clone evolving from server-side rendering to client-side SPA with Flask backend, RESTful APIs, and real-time AJAX updates deployed on AWS.",
+    "thumbnail": "/assets/images/projects/instagram-thumb.jpg",
+    "featured": false,
+    "details": {
+      "description": "Built a full-featured Instagram clone in two phases, evolving from server-side rendering to a client-side single-page application powered by RESTful APIs. Developed server-rendered backend using Flask, Jinja templates, modular blueprints, and normalized SQL schema supporting users, posts, likes, and follows. Refactored backend logic into clean REST endpoints and implemented dynamic JavaScript frontend with AJAX for real-time UI updates.",
+      "techStack": ["Flask", "JavaScript", "AJAX", "SQL", "Jinja", "AWS"],
+      "architecture": "Full-stack architecture with Flask backend using modular blueprints, normalized relational database schema, RESTful API design, event-driven JavaScript frontend with AJAX for real-time updates, session-based authentication, and front-end/back-end decoupling.",
+      "images": [],
+      "codeExamples": [],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  },
+  {
+    "id": "chess-accessibility",
+    "title": "Chess Accessibility Extension",
+    "summary": "Browser extension enhancing chess platform accessibility for visually impaired users with voice-to-move input using Levenshtein distance algorithm and auditory feedback.",
+    "thumbnail": "/assets/images/projects/chess-thumb.jpg",
+    "featured": false,
+    "details": {
+      "description": "Developed voice-to-move input system enhancing accessibility for visually impaired chess players. Enabled seamless user interaction by converting voice inputs into algebraic notation moves using Levenshtein distance algorithm, with auditory feedback for actions and errors. Utilized Agile methodologies for requirement elicitation and user testing, ensuring user-centered design.",
+      "techStack": ["JavaScript", "Web Speech API", "Chrome Extension API"],
+      "architecture": "Browser extension with voice recognition integration, Levenshtein distance algorithm for fuzzy matching of chess moves, algebraic notation parser, auditory feedback system, and Agile development methodology with user testing.",
+      "images": [],
+      "codeExamples": [],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  },
+  {
+    "id": "mapreduce-framework",
+    "title": "MapReduce Framework",
+    "summary": "Distributed MapReduce framework in Python with manager-worker architecture, socket-based networking, fault-tolerant execution, and automatic failure recovery.",
+    "thumbnail": "/assets/images/projects/mapreduce-thumb.jpg",
+    "featured": false,
+    "details": {
+      "description": "Implemented a distributed MapReduce framework in Python to execute parallel jobs across multiple workers. Designed manager-worker architecture using socket-based networking to coordinate task distribution and status tracking in cluster environment. Utilized OS-level concurrency (threads and processes) to parallelize tasks and improve throughput. Built fault-tolerant execution with automatic worker failure detection and task reassignment.",
+      "techStack": ["Python", "Socket Programming", "Threading", "Multiprocessing"],
+      "architecture": "Distributed manager-worker architecture with socket-based networking for task coordination, OS-level concurrency using threads and processes, fault-tolerant execution with automatic failure detection and recovery, and horizontal scalability testing in simulated multi-node environment.",
+      "images": [],
+      "codeExamples": [],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  },
+  {
+    "id": "employee-management",
+    "title": "Employee Management System",
+    "summary": "Modular backend system using Java and MySQL with secure input handling, OOP design, custom exception handling, JUnit testing, and relational data modeling.",
+    "thumbnail": "/assets/images/projects/employee-thumb.jpg",
+    "featured": false,
+    "details": {
+      "description": "Built a modular backend using Java and MySQL with secure input handling, clear separation of concerns (OOP), and extensible architecture to support future scaling and new feature integration. Implemented custom exception handling, unit testing (JUnit), and relational data modeling with MySQL.",
+      "techStack": ["Java", "MySQL", "JUnit", "JDBC"],
+      "architecture": "Modular backend with OOP design principles, relational database modeling with MySQL, secure input validation, custom exception handling, comprehensive unit testing with JUnit, and extensible architecture for future scalability.",
+      "images": [],
+      "codeExamples": [],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  }
+]

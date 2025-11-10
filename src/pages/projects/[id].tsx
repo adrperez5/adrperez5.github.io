@@ -1,26 +1,19 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '@/components/Layout';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
-import type { PortfolioData, Project } from '@/types/portfolio';
+import type { Project } from '@/types/portfolio';
 import styles from '@/styles/ProjectDetail.module.css';
 
 interface ProjectDetailProps {
   project: Project;
-  bioName: string;
-  bioSocialLinks: PortfolioData['bio']['socialLinks'];
 }
 
-export default function ProjectDetail({
-  project,
-  bioName,
-  bioSocialLinks,
-}: ProjectDetailProps) {
+export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <>
       <Head>
-        <title>{`${project.title} | ${bioName}`}</title>
+        <title>{`${project.title}`}</title>
         <meta name="description" content={project.details.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={project.title} />
@@ -28,8 +21,7 @@ export default function ProjectDetail({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout name={bioName} socialLinks={bioSocialLinks}>
-        <div className={styles.projectDetailContainer}>
+      <div className={styles.projectDetailContainer}>
           {/* Breadcrumb navigation */}
           <nav className={styles.breadcrumb}>
             <Link href="/projects">← Back to Projects</Link>
@@ -142,7 +134,6 @@ export default function ProjectDetail({
             </section>
           )}
         </div>
-      </Layout>
     </>
   );
 }
@@ -152,12 +143,10 @@ export default function ProjectDetail({
  * This creates a separate HTML file for each project
  */
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data: PortfolioData = await import('../../../public/data.json').then(
-    (mod) => mod.default
-  );
+  const data = await import('@/data/projects.json').then((mod) => mod.default);
 
   // Generate path for each project
-  const paths = data.projects.map((project) => ({
+  const paths = data.map((project) => ({
     params: { id: project.id },
   }));
 
@@ -174,11 +163,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<ProjectDetailProps> = async (context) => {
   const { id } = context.params!;
 
-  const data: PortfolioData = await import('../../../public/data.json').then(
-    (mod) => mod.default
-  );
+  const data = await import('@/data/projects.json').then((mod) => mod.default);
 
-  const project = data.projects.find((p) => p.id === id);
+  const project = data.find((p) => p.id === id);
 
   // Should never happen due to getStaticPaths, but TypeScript safety
   if (!project) {
@@ -190,8 +177,6 @@ export const getStaticProps: GetStaticProps<ProjectDetailProps> = async (context
   return {
     props: {
       project,
-      bioName: data.bio.name,
-      bioSocialLinks: data.bio.socialLinks,
     },
   };
 };

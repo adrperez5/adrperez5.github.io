@@ -1,0 +1,15 @@
+{
+  "name": "Adrian Perez",
+  "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/adrperez5",
+      "icon": "github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/adrian-perez-72ab1a16a/",
+      "icon": "linkedin"
+    }
+  ]
+}
