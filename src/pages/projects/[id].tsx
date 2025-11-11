@@ -18,7 +18,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={project.title} />
         <meta property="og:description" content={project.details.description} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.projectDetailContainer}>

@@ -45,7 +45,6 @@ export default function Projects() {
           content={`Browse ${projectsData.length} projects showcasing full-stack development, iOS engineering, and distributed systems`}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.projectsContainer}>

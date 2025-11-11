@@ -1,40 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Portfolio Website
 
-## Getting Started
+> Personal portfolio showcasing my projects and technical experience
 
-First, run the development server:
+**Live Site:** [https://adrperez5.github.io](https://adrperez5.github.io)
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (Pages Router)
+- **Language:** TypeScript
+- **Styling:** CSS Modules
+- **Deployment:** GitHub Pages
+- **Libraries:** React 19
+
+## Features
+
+- Responsive design optimized for mobile and desktop
+- Dynamic project routing with detailed case studies
+- Data-driven content management using JSON
+- Modular component architecture
+- Optimized for performance and SEO
+
+## Local Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view in your browser.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+├── src/
+│   ├── components/     # Reusable UI components (Layout, etc.)
+│   ├── pages/          # Next.js pages and routing
+│   ├── data/           # Static content (JSON files)
+│   └── styles/         # CSS Modules and global styles
+├── public/             # Static assets (images, favicon)
+└── .github/
+    └── workflows/      # GitHub Actions for deployment
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This site is automatically deployed to GitHub Pages via GitHub Actions on push to the `main` branch.
 
-## Learn More
+To deploy manually:
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This project is open source and available for reference.

@@ -16,7 +16,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={`${homeData.bio.name} | ${homeData.bio.title}`} />
         <meta property="og:description" content={homeData.bio.description} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.homeContainer}>
